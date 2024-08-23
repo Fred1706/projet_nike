@@ -4,6 +4,8 @@ export default class Carrousel {
   constructor(element) {
     this.element = element;
     this.options = {
+      speed: 3000,
+      allowTouchMove: false,
       slidesPerView: 1,
       spaceBetween: 0,
       pagination: {
@@ -36,7 +38,7 @@ export default class Carrousel {
       this.options.autoplay = {
         delay: 3000,
         disableOnInteraction: false,
-        pauseOnMouseEnter: true,
+        pauseOnMouseEnter: false,
       };
     }
 
@@ -49,35 +51,6 @@ export default class Carrousel {
         this.element.dataset.slides || this.options.slidesPerView;
     }
 
-    if ('actualite' in this.element.dataset) {
-      this.options.slidesPerView = 3.5;
-      this.options.spaceBetween = 30;
-      this.options.breakpoints = {
-        0: {
-          slidesPerView: 1.2,
-          spaceBetween: 20,
-        },
-        400: {
-          slidesPerView: 1.3,
-          spaceBetween: 20,
-        },
-        500: {
-          slidesPerView: 1.5,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2.2,
-          spaceBetween: 30,
-        },
-        1024: {
-          slidesPerView: 2.5,
-          spaceBetween: 30,
-        },
-        1400: {
-          slidesPerView: 3.5,
-          spaceBetween: 30,
-        },
-      };
-    }
+   
   }
 }

@@ -11,7 +11,6 @@ export default class ComponentFactory {
       Form,
       Accordion,
       Scrolly,
-      Header,
       Youtube,
       Carousel,
     };

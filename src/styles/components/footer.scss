@@ -76,16 +76,15 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50px;
-        width: 50px;
-        border-radius: 100%;
-
-        &:hover {
-            background-color: var(--color-black);
-        }
+       
+        
 
         .icon {
             fill: var(--color-white);
+
+            &:hover{
+                fill: var(--color-black);
+            }
         }
     }
 }
