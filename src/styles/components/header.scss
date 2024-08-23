@@ -1,3 +1,19 @@
-header {
+.header {
     background-color: var(--color-black);
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 30px;
+
+        @media screen and (max-width: 880px) {
+            display: none;
+        }
+    }
 }
