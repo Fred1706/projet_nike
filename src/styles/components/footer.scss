@@ -1,0 +1,141 @@
+footer {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+
+    .wrapper {
+        padding-top: 70px;
+        position: relative;
+    }
+}
+
+.fleche-up {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    background-color: var(--color-black);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+        fill: var(--color-white);
+        transform: rotate(-90deg);
+    }
+}
+
+.footer-gauche {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media screen and (max-width: 600px) {
+    }
+}
+
+.infolettre {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    h4,
+    p {
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .button {
+        margin-left: auto;
+        border-radius: 0;
+        background-color: var(--color-black);
+    }
+
+    .boite-infolettre {
+        max-width: 515px;
+        display: flex;
+        align-items: center;
+
+        background-color: var(--color-white);
+
+        p {
+            color: var(--color-black);
+            padding-left: 25px;
+        }
+    }
+}
+
+.reseaux {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+
+    a {
+        background-color: var(--color-bg-primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+
+        &:hover {
+            background-color: var(--color-black);
+        }
+
+        .icon {
+            fill: var(--color-white);
+        }
+    }
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 70px;
+
+    @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.footer-droite {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+    align-items: flex-end;
+
+    @media screen and (max-width: 600px) {
+        padding-right: 0;
+        justify-content: flex-start;
+    }
+}
+
+.credit {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 25px;
+    
+
+    @media screen and (max-width: 600px) {
+        text-align: left;
+    }
+
+
+    a{
+       font-style: italic;
+    }
+}
+
+
+
+
+.ligne-footer{
+   
+    border-top:solid 4px ;
+    padding-bottom:50px ;
+}
