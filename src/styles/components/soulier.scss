@@ -1,7 +1,7 @@
 .soulier {
     padding: 50px 0;
     position: relative;
-    
+    height: 100vh;
 }
 
 .soulier-media {
@@ -29,4 +29,34 @@
         max-width: 70%;
         margin: 0 auto;
     }
+}
+
+
+.pastille-icon{
+    height: 40px;
+    width: 40px;
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+
+}
+
+.pastille-content{
+    background-color: var(--color-secondary);
+    max-width: 350px;
+    padding: 15px;
+    border-radius: 15px;
+
+    p{
+        margin: 0;
+        padding-top: 20px;
+    }
+}
+
+
+.pastille{
+    display: flex;
+    gap:20px ;
 }
