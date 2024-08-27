@@ -4,12 +4,12 @@ export default class Carrousel {
   constructor(element) {
     this.element = element;
     this.options = {
-      speed: 3000,
-      allowTouchMove: false,
+      allowTouchMove: true,
       slidesPerView: 1,
       spaceBetween: 0,
       pagination: {
         el: this.element.querySelector('.swiper-pagination'),
+        clickable: true,
       },
       navigation: {
         nextEl: this.element.querySelector('.swiper-button-next'),
@@ -51,6 +51,19 @@ export default class Carrousel {
         this.element.dataset.slides || this.options.slidesPerView;
     }
 
-   
+    if ('hero' in this.element.dataset) {
+      this.options.allowTouchMove = false;
+      this.options.speed = 3000;
+
+    }
+
+
+    if ('partenaire' in this.element.dataset) {
+      this.options.spaceBetween = 60;
+      this.options.slideToClickedSlide = true;
+      this.options.initialSlide = 1;
+      this.options.centeredSlides = true;
+      this.options.speed = 500;
+    }
   }
 }

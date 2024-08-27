@@ -14,8 +14,9 @@
     img {
         display: block;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         object-fit: cover;
+        object-position: bottom;
     }
 }
 
@@ -40,14 +41,21 @@
     align-items: center;
     justify-content: center;
     border-radius: 100%;
+    cursor: pointer;
+
+    .icon{
+        transition: all 0.5s ease-out;
+    }
 
 }
 
 .pastille-content{
+    transition: all 0.3s ease-out;
     background-color: var(--color-secondary);
     max-width: 350px;
     padding: 15px;
     border-radius: 15px;
+    opacity: 0;
 
     p{
         margin: 0;
@@ -59,4 +67,34 @@
 .pastille{
     display: flex;
     gap:20px ;
+    position: absolute;
+}
+
+.tenue{
+    top: 40%;
+    left: 30%;
+}
+
+.toucher{
+    top: 35%;
+    left: 65%;
+}
+
+.adherence{
+    top: 70%;
+    left: 50%;
+}
+
+
+.is-active{
+    background-color: var(--color-primary);
+    
+    .icon{
+        transform: rotate(45deg);
+    }
+
+    & + .pastille-content{
+       opacity: 1;
+    }
+
 }

@@ -6,7 +6,7 @@
 <section class="hero">
 
 
-    <div class="hero-shoes swiper"  data-loop data-autoplay data-component="Carousel">
+    <div class="hero-shoes swiper" data-hero  data-loop data-autoplay data-component="Carousel">
         <div class="swiper-wrapper">
             
             <div class="container swiper-slide"><img src="assets/images/soulier_blanc.png" alt="soulier blanc"  /></div>
@@ -79,9 +79,12 @@
         <div class="soulier-content">
             <h2>Un soulier qui change votre façon de jouer</h2>
 
+            <div class="pastilles" data-component="Accordion"> 
+                
+                
             <div class="pastille tenue">
 
-                <div class="pastille-icon">
+                <div class="pastille-icon js-pastille">
                     <svg class="icon">
                     <use xlink:href="#icon-plus"></use>
                     </svg>
@@ -97,7 +100,7 @@
 
             <div class="pastille toucher">
 
-                <div class="pastille-icon">
+                <div class="pastille-icon js-pastille">
                     <svg class="icon">
                     <use xlink:href="#icon-plus"></use>
                 </svg>
@@ -113,7 +116,10 @@
 
             <div class="pastille adherence">
 
-                <div class="pastille-icon">
+
+
+
+                <div class="pastille-icon js-pastille">
                     <svg class="icon">
                     <use xlink:href="#icon-plus"></use>
                 </svg>
@@ -127,7 +133,8 @@
                 </div>
             </div>
 
-           
+            </div>
+
 
             
         </div>
@@ -136,6 +143,57 @@
 
 
     </div>
+</section>
+
+
+<section class="partenaires">
+    <h2>nos partenaire</h2>
+
+    <div class="partenaire-swiper swiper" data-slides="1.5" data-partenaire data-component="Carousel">
+        <div class="swiper-wrapper">
+            
+            <div class="partenaire swiper-slide">
+                <div class="partenaire-content">
+                    <h3>Debinha</h3>
+                    <p>Current de Kansas City</p>
+                </div>
+
+                <div class="partenaire-media">
+                    <img src="assets/images/debinha.jpg" alt="grace geyoro">
+                </div>
+            </div>
+
+            <div class="partenaire swiper-slide">
+                <div class="partenaire-content">
+                    <h3>grace geyoro</h3>
+                    <p>Paris Saint-Germain</p>
+                </div>
+
+                <div class="partenaire-media">
+                    <img src="assets/images/grace.png" alt="grace geyoro">
+                </div>
+            </div>
+
+            <div class="partenaire swiper-slide">
+                <div class="partenaire-content">
+                    <h3>crystal dunn</h3>
+                    <p>Thorns de Portland</p>
+                </div>
+
+                <div class="partenaire-media">
+                    <img src="assets/images/crystal.jpg" alt="grace geyoro">
+                </div>
+            </div>
+            
+            
+            
+            
+        </div> 
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+
 </section>
 
 
