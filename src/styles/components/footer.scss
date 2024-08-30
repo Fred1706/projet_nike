@@ -45,8 +45,11 @@ footer {
         text-transform: uppercase;
     }
 
+
+
+
     .button {
-        margin-left: auto;
+        
         border-radius: 0;
         background-color: var(--color-white);
         color: var(--color-primary);
@@ -57,19 +60,22 @@ footer {
         }
     }
 
-    .boite-infolettre {
-        max-width: 515px;
-        display: flex;
-        align-items: center;
+    
+}
 
-        background-color: var(--color-white);
+.input{
+    display: flex;
 
-        p {
-            color: var(--color-black);
-            padding-left: 25px;
-        }
+    .input-element{
+        width: 300px;
     }
 }
+
+
+
+
+
+
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
