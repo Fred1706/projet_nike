@@ -69,32 +69,6 @@ footer {
         }
     }
 }
-
-.reseaux {
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
-
-    a {
-        background-color: var(--color-bg-primary);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-        
-
-        .icon {
-            fill: var(--color-white);
-
-            &:hover{
-                fill: var(--color-black);
-            }
-        }
-    }
-}
-
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -144,3 +118,47 @@ footer {
     border-top:solid 4px ;
     padding-bottom:50px ;
 }
+
+.reseaux {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+
+.nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: var(--color-white);
+    height: 42px;
+    transition: all 0.2s ease-out;
+    width: 42px;
+    
+
+    &:hover {
+        transform: scale(1.4);
+        color: var(--color-white);
+    }
+}
+
+.twitch:hover {
+    background: #9146ff;
+}
+
+.twitter:hover {
+    background: #1da1f2;
+}
+
+.insta:hover {
+    background: #8a3ab9;
+}
+
+.tiktok:hover {
+    background: #ff0050;
+}
+
+
