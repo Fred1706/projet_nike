@@ -9,6 +9,7 @@ export default class ComponentFactory {
   constructor() {
     this.componentList = {
       Form,
+      Header,
       Accordion,
       Scrolly,
       Youtube,

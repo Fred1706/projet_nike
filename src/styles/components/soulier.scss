@@ -47,6 +47,19 @@
         transition: all 0.5s ease-out;
     }
 
+    &.is-active{
+        background-color: var(--color-primary);
+        
+        .icon{
+            transform: rotate(45deg);
+        }
+    
+        & + .pastille-content{
+           opacity: 1;
+        }
+    
+    }
+
 }
 
 .pastille-content{
@@ -68,6 +81,8 @@
     display: flex;
     gap:20px ;
     position: absolute;
+
+   
 }
 
 .tenue{
@@ -86,15 +101,3 @@
 }
 
 
-.is-active{
-    background-color: var(--color-primary);
-    
-    .icon{
-        transform: rotate(45deg);
-    }
-
-    & + .pastille-content{
-       opacity: 1;
-    }
-
-}

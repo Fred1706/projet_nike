@@ -43,8 +43,10 @@ export default class Header {
       this.scrollPosition >
       document.scrollingElement.scrollHeight * this.options.treshold
     ) {
+      console.log('add');
       this.html.classList.add('header-is-hidden');
     } else {
+      console.log('remove');
       this.html.classList.remove('header-is-hidden');
     }
   }
@@ -61,7 +63,7 @@ export default class Header {
 
   initNavMobile() {
     const toggle = this.element.querySelector('.js-toggle');
-    toggle.addEventListener('click', this.onToggleNav.bind(this));
+    if (toggle) toggle.addEventListener('click', this.onToggleNav.bind(this));
   }
 
   onToggleNav() {

@@ -6,7 +6,7 @@
 <section class="hero">
 
 
-    <div class="hero-shoes swiper" data-hero  data-loop data-autoplay data-component="Carousel">
+    <div class="hero-shoes swiper" id="hero" data-hero  data-loop data-autoplay data-component="Carousel">
         <div class="swiper-wrapper">
             
             <div class="container swiper-slide"><img src="assets/images/soulier_blanc.png" alt="soulier blanc"  /></div>
@@ -147,7 +147,7 @@
 
 
 <section class="partenaires" id="partenaire">
-    <h2>nos partenaire</h2>
+    <h2 data-scrolly="fromTop" >nos partenaire</h2>
 
     <div class="partenaire-swiper swiper" data-slides="1.5" data-partenaire data-component="Carousel">
         <div class="swiper-wrapper">
@@ -189,7 +189,7 @@
             
             
         </div> 
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination" data-scrolly="fromBottom"></div>
     </div>
 
     <img class="ellipse" src="assets/images/Ellipse.png" alt="">
@@ -203,9 +203,9 @@
     <div class="wrapper">
         <div class="grid">
 
-            <video  src="assets/videos/conception.mp4" autoplay loop controls ></video>
+            <video  src="assets/videos/conception.mp4" autoplay loop controls data-scrolly="fromLeft" ></video>
 
-            <div class="conception-content">
+            <div class="conception-content" data-scrolly="fromRight">
                 <h2>conception</h2>
 
                 <p class="sous-titre">Le football féminin n’a jamais été
