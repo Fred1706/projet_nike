@@ -1,11 +1,42 @@
 .button {
-    background-color: var(--color-primary);
-    padding: 5px 15px;
+    position: relative;
+    display: block;
+    padding: 5px 20px;
     border-radius: 15px;
     text-transform: uppercase;
+    overflow:hidden;
+    background: none;
+    border: solid 3px var(--color-primary);
+    overflow:hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.12s ease-in;
 
-    &:hover {
-        background-color: var(--color-white);
-        color: var(--color-primary);
+    &:hover{
+        color: inherit;
     }
+
+    
+
+      
 }
+
+.button:before {
+        content: "";
+        position: absolute;
+        background: var(--color-primary);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: -1;
+        transition: top 0.09s ease-in;
+        width: 100%;
+      }
+
+
+.button:hover:before {
+        top: 0;
+      }
+      

@@ -6,6 +6,7 @@
 a {
     text-decoration: none;
     color: var(--color-white);
+    overflow: hidden;
 
     font-size: #{typo(16px, 20px)};
 
