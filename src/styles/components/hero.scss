@@ -1,17 +1,22 @@
-.hero{
+.hero {
     position: relative;
     padding: 90px 0;
     width: 100%;
     height: 90vh;
-    .wrapper{
+    @media screen and (max-width: 880px) {
+        height: 60vh;
+    }
+    .wrapper {
         display: flex;
         height: 90vh;
+
+        @media screen and (max-width: 880px) {
+            height: 60vh;
+        }
     }
-    
 }
 
-
-.hero-media{
+.hero-media {
     z-index: -1;
     width: 100%;
     position: absolute;
@@ -19,51 +24,44 @@
     left: 0;
     display: flex;
     img {
-       
         width: 100%;
         height: 90vh;
         object-fit: cover;
         object-position: bottom;
-        
+
+        @media screen and (max-width: 880px) {
+            height: 60vh;
+        }
     }
 }
 
-
-.hero-content{
-    
+.hero-content {
     height: 100%;
     width: 100%;
-   .title-hero{
-    text-transform: uppercase;
-    display: flex; 
-    flex-direction: column;
-    align-items: flex-start;
-    
-    gap: 50px;
-   }
+    .title-hero {
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
+        gap: 50px;
+    }
 
-   .phantom{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-   }
+    .phantom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
 
-
-   p{
-    padding-top:50px ;
-    max-width: 500px;
-    text-align: center;
-    margin: 0 auto;
-
-   }
+    p {
+        padding-top: 50px;
+        max-width: 500px;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
-
-.front{
+.front {
     z-index: 8;
     position: relative;
-    
-    
 }
-
