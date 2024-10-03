@@ -20,7 +20,6 @@ export default class Carrousel {
   }
 
   init() {
-    console.log('yoo');
     this.setOptions();
     let swiper = new Swiper(this.element, this.options);
   }
